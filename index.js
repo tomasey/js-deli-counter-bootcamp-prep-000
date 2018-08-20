@@ -21,7 +21,11 @@ function currentLine(deliLine) {
         names = names + ", " 
       }
     }
+    
     return ("The line is currently: " + names)
+  if (deliLine.length > 0) {
+    for (var i = 0; i < 3; i++)
+    return ("The line is currently: " + i + ". ${name}")
   }
   else {
     return "The line is currently empty."
